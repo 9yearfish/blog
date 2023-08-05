@@ -11,7 +11,7 @@ article.archive {
   line-height: 1;
   position: relative;
   color: #212121;
-  margin: 0;
+  margin: 1rem 0;
 }
 .archive-post .archive-title a {
   color: #000;
