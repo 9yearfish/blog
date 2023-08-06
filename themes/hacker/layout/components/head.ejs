@@ -68,11 +68,10 @@
   <meta property="og:image" content="<%= page.cover %>" />
   <% } else if(config.cover) { %>
   <meta property="og:image" content="<%= config.cover %>"/>
-  <% } else { %>
-  <meta property="og:image" content="<%- config.root %>favicon.ico"/>
   <% } %>
 
-  <link href="<%- config.ico %>" rel="icon">
+  <link rel="icon" href="<%- config.ico %>">
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
 </head>

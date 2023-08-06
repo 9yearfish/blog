@@ -10,7 +10,7 @@ keywords: '9yearfish,独立开发者，'
 author: 9YearFish
 language: en
 timezone: 'Asia/Shanghai'
-ico: https://aoxiang.me/favicon.ico
+ico: /favicon.png
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
