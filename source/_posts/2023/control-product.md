@@ -58,7 +58,7 @@ tags: [product,indiehackers]
 
 
 下面是 GPT3 VS GPT3.5 每次会话平均成本
-![GPT3.5 VS GPT3 成本](https://stock-demo-image.nenchan.cn/website/ai/20230806183208.png)
+![GPT3.5 VS GPT3 成本](https://stock-demo-image.nenchan.cn/website/ai/screely-1691317907010.png)
 
 
 如果要做包月，那也要有数据支撑，我当时算了一下，我这边用户对话次数靠前的 20% 用户，他们的次数评价量是 800 次/月。按照当时的成本大概 5 分一次会话，800 次会话成本就 40 元，那么我定价在 40 元以上问题不大，加上 80% 用户达不到 800 次，以及按照次数收费的利润，我大概率是不会亏损。
