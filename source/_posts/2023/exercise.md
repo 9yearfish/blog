@@ -1,7 +1,7 @@
 ---
 title: 每个人都应该锻炼的一个能力
 date: 2023-08-05 00:08:10
-tags:
+tags: [person,business,indiehackers]
 ---
 
 上一篇文章还是在 21 年的时候，现在孩子都会打酱油了。
