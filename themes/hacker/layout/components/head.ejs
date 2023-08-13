@@ -68,6 +68,13 @@
   <meta property="og:locale" content="<%= config.language %>"/>
   <meta property="og:site_name" content="<%= config.title %>"/>
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="<%= url %>" />
+  <meta name="twitter:creator" content="<%= config.author %>">
+  <meta name="twitter:title" content="<%= title.join(' | ') %>" />
+  <meta name="twitter:description" content="<%= page.title %>" />
+  <meta name="twitter:image" content="<%= page.thumbnail %>" />
+
   <% if(page.cover) { %>
   <meta property="og:image" content="<%= page.cover %>" />
   <% } else if(config.cover) { %>
