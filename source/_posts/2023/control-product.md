@@ -2,6 +2,8 @@
 title: 尽量控制产品走向
 date: 2023-08-06 15:03:37
 tags: [product,indiehackers]
+cover: https://stock-demo-image.nenchan.cn/website/ai/screely-1691311670913.png
+description: 对每个想要走独立开发路线的人来说，开发能力可能都不是最欠缺的，最欠缺的是运营推广、产品设计的能力。 
 ---
 
 对每个想要走独立开发路线的人来说，开发能力可能都不是最欠缺的，最欠缺的是运营推广、产品设计的能力。 
