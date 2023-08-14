@@ -2,7 +2,7 @@
 title: 如何走好独立开发第一步
 date: 2023-08-14 00:11:58
 tags: [product,indiehackers]
-cover: https://stock-demo-image.nenchan.cn/website/ai/scan.png
+cover: https://stock-demo-image.nenchan.cn/website/ai/choose-product.png
 description: 最近推上关于独立开发的话题非常火热，看到很多人说赚不到钱。我觉得是有一些项目从一开始就注定赚不到钱。
 ---
 最近推上关于独立开发的话题非常火热，看到很多人说赚不到钱。我觉得是有一些项目从一开始就注定赚不到钱，比如我做的 #屏蔽黄推。完全属于脑袋一热，我也做过很多其他赚不到钱的项目。其实做产品跟做电商很像，选品都是关键的第一步，这里我也分享一下我现在看一个 idea 是否值得做的评定标准。

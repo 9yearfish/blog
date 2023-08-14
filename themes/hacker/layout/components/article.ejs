@@ -24,7 +24,7 @@
     </span>
   </div>
 
-<!--
+
   <% if (item.photos && item.photos.length){ %>
   <div class="featured-media">
     <% if (item.photos.length && !index){ %>
@@ -38,7 +38,14 @@
     <% } %>
   </div>
   <% } %>
--->
+  
+  <% if (item.cover){ %>
+  <div class="featured-media">
+    <img src="<%- url_for(item.cover) %>" class="attachment-post-thumbnail size-post-thumbnail">
+  </div>
+  <% } %>
+
+
   <div class="article-content">
     <div class="entry">
       <% if (item.excerpt && index){ %>
