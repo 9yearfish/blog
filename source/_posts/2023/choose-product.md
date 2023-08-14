@@ -1,5 +1,5 @@
 ---
-title: 独立开发第一步:选择一个好的IDEA
+title: 独立开发第一步————选择一个好的IDEA
 date: 2023-08-14 00:11:58
 tags: [product,indiehackers]
 cover: https://stock-demo-image.nenchan.cn/website/ai/choose-product.png
