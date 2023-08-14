@@ -3,7 +3,7 @@ title: 如何走好独立开发第一步
 date: 2023-08-14 00:11:58
 tags: [product,indiehackers]
 photos:
-- https://stock-demo-image.nenchan.cn/website/ai/scan.png
+- https://img-sg.kee.so/brand/og.png
 ---
 
 
