@@ -3,6 +3,7 @@ title: 一定要定好自己的主线任务
 date: 2023-08-21 12:45:33
 tags: person
 cover: https://stock-demo-image.nenchan.cn/website/ai/main-task.png
+description: 我有一段时间一直在反思，为什么同样的年龄，我跟很多人会有差距，他们为什么能在 30 岁的时候更从容的面对生活，除了心态，更多的还是在此之前做对了很多选择，那么我们为什么会抓不住，我一直很希望找到背后的原因，或者是说，我跟他们之间底层的区别到底是什么？
 ---
 
 # 
