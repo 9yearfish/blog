@@ -2,7 +2,7 @@
 title: 如何远程开通美股账户、海外银行卡？
 date: 2024-02-25 23:02:28
 tags: person
-cover: https://stock-demo-image.nenchan.cn/website/ai/meigu.png
+cover: https://stock-demo-image.nenchan.cn/website/ai/ocbc-to-nvidia.png
 description: 人在国内，远程开通了美股账户，并入金，买了一些英伟达的股票。
 ---
 
