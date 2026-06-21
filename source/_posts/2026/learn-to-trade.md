@@ -1,6 +1,6 @@
 ---
 title: 做相对确定性的投资
-date: 2026-06-16 21:00:00
+date: 2026-06-16
 tags: person
 cover: https://stock-demo-image.nenchan.cn/website/ai/learn-to-trade.png
 description: 我买英伟达、买比特币，逻辑其实都是「懵的」——我知道它会涨就买，却不知道什么时候该卖。我想学的，是一整套完整的交易逻辑，而不是跟着别人买、跟着别人卖。
