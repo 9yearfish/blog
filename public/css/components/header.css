@@ -46,8 +46,28 @@ header .site-navigation ul li {
 }
 header .site-navigation ul li a {
   display: block;
+  position: relative;
   color: #f03838;
   font-size: 1.6rem;
   line-height: 2rem;
   padding: 0 1rem;
+  transition: opacity 0.2s ease;
+}
+header .site-navigation ul li a:after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  height: 2px;
+  background: #f03838;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.22s ease;
+}
+header .site-navigation ul li a:hover {
+  opacity: 0.85;
+}
+header .site-navigation ul li a:hover:after {
+  transform: scaleX(1);
 }

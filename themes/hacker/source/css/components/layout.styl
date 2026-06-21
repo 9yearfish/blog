@@ -1,8 +1,8 @@
 $bodyBgCommonColor = #f7f7f7
 $mainBgCommonColor = #ffffff
 
-$bodyBgDarkColor = #000000
-$mainBgDarkColor = #110f12
+$bodyBgDarkColor = #111111
+$mainBgDarkColor = #1a1a1a
 
 html
   font-size 10px
@@ -47,3 +47,24 @@ body
 
     .blog
       background-color $mainBgDarkColor
+
+// gentle entrance for every page's main content
+@keyframes contentRise
+  from
+    opacity 0
+    transform translateY(14px)
+  to
+    opacity 1
+    transform translateY(0)
+
+.content > article
+  animation contentRise 0.5s ease both
+
+// honor "reduce motion" — disable all animation/transition
+@media (prefers-reduced-motion: reduce)
+  *
+  *:before
+  *:after
+    animation-duration 0.001ms !important
+    animation-delay 0ms !important
+    transition-duration 0.001ms !important

@@ -1,29 +1,66 @@
-$archiveTitleCommonColor = #212121
-$archiveTitleHoverCommonColor = #ffffff
-$archiveTitleLinkCommonColor = black
-$archiveTitleTimeCommonColor = #9e9e9e
+$archiveTitleCommonColor = #4a4a4a
+$archiveTitleLinkCommonColor = #4a4a4a
+$archiveYearCommonColor = #3f3f3f
+$archiveDividerCommonColor = #ececec
+// darkened from #9e9e9e (~2.8:1) to pass WCAG AA
+$archiveTitleTimeCommonColor = #6b6b6b
 $archiveTitleTimeHoverCommonColor = #F03838
 
 $archiveTitleDarkColor = #f6f2f5
-$archiveTitleHoverDarkColor = #000000
-$archiveTitleLinkDarkColor = white
-$archiveTitleTimeDarkColor = #8e8e93
+$archiveTitleLinkDarkColor = #ffffff
+$archiveYearDarkColor = #ffffff
+$archiveDividerDarkColor = #2a262d
+$archiveTitleTimeDarkColor = #9a9aa0
 $archiveTitleTimeHoverDarkColor = #F03838
 
 article.archive
   padding 0
   margin 2em auto
 
+// year heading — groups the flat list into a scannable history
+.archive-year
+  font-size 3em
+  font-weight 700
+  line-height 1
+  color $archiveYearCommonColor
+  margin 1.6em 0 0.5em
+  padding-bottom 0.25em
+  border-bottom 1px solid $archiveDividerCommonColor
+
+  &:first-child
+    margin-top 0.2em
+
+// one dense "date + title" row per post — reads like an index
 .archive-post
+  display flex
+  align-items baseline
+  gap 1.2rem
   text-align left
-  margin 2em auto
+  margin 0.55em 0
+
+  time
+    flex 0 0 auto
+    font-style normal
+
+    a
+      font-size 1.4rem
+      color $archiveTitleTimeCommonColor
+      white-space nowrap
+
+      &:before
+        content '#'
+      &:hover
+        color $archiveTitleTimeHoverCommonColor
 
   .archive-title
-    font-size 2.8em
-    line-height 1
-    position relative
+    flex 1 1 auto
+    min-width 0           // let long titles wrap instead of overflowing the flex row
+    font-size 2em
+    line-height 1.35
+    margin 0
     color $archiveTitleCommonColor
-    margin 1rem 0
+    overflow-wrap break-word
+    word-break break-word
 
     a
       color $archiveTitleLinkCommonColor
@@ -34,34 +71,35 @@ article.archive
         transition box-shadow 0.15s
         box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0)
 
-      &:hover
-        color $archiveTitleCommonColor
+      &:hover span
+        box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0.4)
 
-        span
-          box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0.4)
+// mobile: shrink type so titles never clip the viewport
+@media (max-width: 768px)
+  .archive-year
+    font-size 2.4em
+    margin 1.2em 0 0.4em
 
-  time
-    font-style italic
+  .archive-post
+    gap 0.9rem
+    margin 0.5em 0
 
-    a
-      font-size 1.6rem
-      color $archiveTitleTimeCommonColor
-
-      &:before
-        content '#'
-      &:hover
-        color $archiveTitleTimeHoverCommonColor
+    time a
+      font-size 1.3rem
+    .archive-title
+      font-size 1.7em
 
 @media (prefers-color-scheme dark)
+  .archive-year
+    color $archiveYearDarkColor
+    border-bottom-color $archiveDividerDarkColor
+
   .archive-post
     .archive-title
       color $archiveTitleDarkColor
 
       a
         color $archiveTitleLinkDarkColor
-
-        &:hover
-          color $archiveTitleDarkColor
 
     time
       a
@@ -70,3 +108,27 @@ article.archive
         &:hover
           color $archiveTitleTimeHoverDarkColor
 
+// entrance: each year + row fades up, lightly staggered
+@keyframes archiveItemIn
+  from
+    opacity 0
+    transform translateY(10px)
+  to
+    opacity 1
+    transform translateY(0)
+
+.archive
+  .archive-year,
+  .archive-item
+    animation archiveItemIn 0.5s ease both
+
+  for n in (1..16)
+    > *:nth-child({n})
+      animation-delay (n * 0.04s)
+
+  // hover: row nudges right, date warms up
+  .archive-post
+    transition transform 0.18s ease
+
+    &:hover
+      transform translateX(4px)
