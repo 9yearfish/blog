@@ -819,26 +819,26 @@ article.archive {
   font-weight: 700;
   line-height: 1;
   color: #3f3f3f;
-  margin: 1.6em 0 0.5em;
-  padding-bottom: 0.25em;
+  margin: 2.4em 0 0.9em;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid #ececec;
 }
 .archive-year:first-child {
-  margin-top: 0.2em;
+  margin-top: 0.3em;
 }
 .archive-post {
   display: flex;
   align-items: baseline;
-  gap: 1.2rem;
+  gap: 1.7rem;
   text-align: left;
-  margin: 0.55em 0;
+  margin: 1.15em 0;
 }
 .archive-post time {
   flex: 0 0 auto;
   font-style: normal;
 }
 .archive-post time a {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #6b6b6b;
   white-space: nowrap;
 }
@@ -852,7 +852,7 @@ article.archive {
   flex: 1 1 auto;
   min-width: 0;
   font-size: 2em;
-  line-height: 1.35;
+  line-height: 1.5;
   margin: 0;
   color: #4a4a4a;
   overflow-wrap: break-word;
@@ -873,17 +873,18 @@ article.archive {
 @media (max-width: 768px) {
   .archive-year {
     font-size: 2.4em;
-    margin: 1.2em 0 0.4em;
+    margin: 1.8em 0 0.7em;
   }
   .archive-post {
-    gap: 0.9rem;
-    margin: 0.5em 0;
+    gap: 1.2rem;
+    margin: 0.95em 0;
   }
   .archive-post time a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .archive-post .archive-title {
     font-size: 1.7em;
+    line-height: 1.5;
   }
 }
 @media (prefers-color-scheme: dark) {
