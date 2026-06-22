@@ -3,6 +3,7 @@ title: 坦荡地表达自己的价值
 date: 2026-06-17
 tags: [person,business]
 cover: https://stock-demo-image.nenchan.cn/website/ai/express-your-value.png
+recording: true
 description: 一个活动上认识的人，给我上了一课——直接坦荡地表明自己的价值，直接说我能为你做什么，想感谢就直接感谢。这几点，恰恰是我现在最缺的。
 ---
 

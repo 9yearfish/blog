@@ -48,8 +48,8 @@ body
     .blog
       background-color $mainBgDarkColor
 
-// gentle entrance for every page's main content
-@keyframes contentRise
+// ── page entrances ──────────────────────────────────────────
+@keyframes riseIn
   from
     opacity 0
     transform translateY(14px)
@@ -57,8 +57,36 @@ body
     opacity 1
     transform translateY(0)
 
-.content > article
-  animation contentRise 0.5s ease both
+@keyframes badgePop
+  from
+    opacity 0
+    transform scale(0.9)
+  to
+    opacity 1
+    transform scale(1)
+
+// home: each post fades up, lightly staggered
+.posts-loop.on-home > article
+  opacity 0
+  animation riseIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both
+
+  for n in (1..12)
+    &:nth-child({n})
+      animation-delay (n * 0.06s)
+
+// single-article pages: choreograph the article's parts (title → meta → 正文 …)
+.posts-loop.on-post > article > *,
+.posts-loop.on-page > article > *
+  opacity 0
+  animation riseIn 0.52s cubic-bezier(0.22, 1, 0.36, 1) both
+
+  for n in (1..8)
+    &:nth-child({n})
+      animation-delay (n * 0.09s)
+
+// recording badge gets a gentle pop instead of a rise
+.posts-loop.on-post > article > .recording-note
+  animation-name badgePop
 
 // honor "reduce motion" — disable all animation/transition
 @media (prefers-reduced-motion: reduce)

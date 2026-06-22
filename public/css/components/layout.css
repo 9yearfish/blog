@@ -42,8 +42,85 @@ body .blog .content {
     background-color: #1a1a1a;
   }
 }
-.content > article {
-  animation: contentRise 0.5s ease both;
+.posts-loop.on-home > article {
+  opacity: 0;
+  animation: riseIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.posts-loop.on-home > article:nth-child(1) {
+  animation-delay: 0.06s;
+}
+.posts-loop.on-home > article:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.posts-loop.on-home > article:nth-child(3) {
+  animation-delay: 0.18s;
+}
+.posts-loop.on-home > article:nth-child(4) {
+  animation-delay: 0.24s;
+}
+.posts-loop.on-home > article:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.posts-loop.on-home > article:nth-child(6) {
+  animation-delay: 0.36s;
+}
+.posts-loop.on-home > article:nth-child(7) {
+  animation-delay: 0.42s;
+}
+.posts-loop.on-home > article:nth-child(8) {
+  animation-delay: 0.48s;
+}
+.posts-loop.on-home > article:nth-child(9) {
+  animation-delay: 0.54s;
+}
+.posts-loop.on-home > article:nth-child(10) {
+  animation-delay: 0.6s;
+}
+.posts-loop.on-home > article:nth-child(11) {
+  animation-delay: 0.66s;
+}
+.posts-loop.on-home > article:nth-child(12) {
+  animation-delay: 0.72s;
+}
+.posts-loop.on-post > article > *,
+.posts-loop.on-page > article > * {
+  opacity: 0;
+  animation: riseIn 0.52s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.posts-loop.on-post > article > *:nth-child(1),
+.posts-loop.on-page > article > *:nth-child(1) {
+  animation-delay: 0.09s;
+}
+.posts-loop.on-post > article > *:nth-child(2),
+.posts-loop.on-page > article > *:nth-child(2) {
+  animation-delay: 0.18s;
+}
+.posts-loop.on-post > article > *:nth-child(3),
+.posts-loop.on-page > article > *:nth-child(3) {
+  animation-delay: 0.27s;
+}
+.posts-loop.on-post > article > *:nth-child(4),
+.posts-loop.on-page > article > *:nth-child(4) {
+  animation-delay: 0.36s;
+}
+.posts-loop.on-post > article > *:nth-child(5),
+.posts-loop.on-page > article > *:nth-child(5) {
+  animation-delay: 0.45s;
+}
+.posts-loop.on-post > article > *:nth-child(6),
+.posts-loop.on-page > article > *:nth-child(6) {
+  animation-delay: 0.54s;
+}
+.posts-loop.on-post > article > *:nth-child(7),
+.posts-loop.on-page > article > *:nth-child(7) {
+  animation-delay: 0.63s;
+}
+.posts-loop.on-post > article > *:nth-child(8),
+.posts-loop.on-page > article > *:nth-child(8) {
+  animation-delay: 0.72s;
+}
+.posts-loop.on-post > article > .recording-note {
+  animation-name: badgePop;
 }
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -54,7 +131,7 @@ body .blog .content {
     transition-duration: 0.001ms !important;
   }
 }
-@-moz-keyframes contentRise {
+@-moz-keyframes riseIn {
   from {
     opacity: 0;
     transform: translateY(14px);
@@ -64,7 +141,7 @@ body .blog .content {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes contentRise {
+@-webkit-keyframes riseIn {
   from {
     opacity: 0;
     transform: translateY(14px);
@@ -74,7 +151,7 @@ body .blog .content {
     transform: translateY(0);
   }
 }
-@-o-keyframes contentRise {
+@-o-keyframes riseIn {
   from {
     opacity: 0;
     transform: translateY(14px);
@@ -84,7 +161,7 @@ body .blog .content {
     transform: translateY(0);
   }
 }
-@keyframes contentRise {
+@keyframes riseIn {
   from {
     opacity: 0;
     transform: translateY(14px);
@@ -92,5 +169,45 @@ body .blog .content {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@-moz-keyframes badgePop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes badgePop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-o-keyframes badgePop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes badgePop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

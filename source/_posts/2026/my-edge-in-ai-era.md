@@ -3,6 +3,7 @@ title: 机会一定是自己创造争取的
 date: 2026-06-15
 tags: [person,business,indiehackers]
 cover: https://stock-demo-image.nenchan.cn/website/ai/my-edge-in-ai-era.png
+recording: true
 description: AI 已经把开发能力打平，我原来「会写代码、又懂一点产品运营」的优势正在消失。真正抹不平的，是对一个细分行业的深度理解。
 ---
 

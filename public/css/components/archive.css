@@ -58,13 +58,35 @@ article.archive {
 .archive-post .archive-title a:hover span {
   box-shadow: inset 0 -2px 0 rgba(240,56,56,0.4);
 }
+.archive-post .archive-recording {
+  flex: 0 0 auto;
+  align-self: center;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.05rem;
+  line-height: 1;
+  color: #b83b3b;
+  background: rgba(240,56,56,0.07);
+  border: 1px solid rgba(240,56,56,0.16);
+  border-radius: 999px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+.archive-post .archive-recording svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
 @media (max-width: 768px) {
   .archive-year {
     font-size: 2.4em;
     margin: 1.8em 0 0.7em;
   }
   .archive-post {
-    gap: 1.2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
     margin: 0.95em 0;
   }
   .archive-post time a {
@@ -73,6 +95,11 @@ article.archive {
   .archive-post .archive-title {
     font-size: 1.7em;
     line-height: 1.5;
+  }
+  .archive-post .archive-recording {
+    margin-left: auto;
+    font-size: 1rem;
+    padding: 3px 7px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -92,10 +119,15 @@ article.archive {
   .archive-post time a:hover {
     color: #f03838;
   }
+  .archive-post .archive-recording {
+    color: #ef9b9b;
+    background: rgba(240,56,56,0.14);
+    border-color: rgba(240,56,56,0.28);
+  }
 }
 .archive .archive-year,
 .archive .archive-item {
-  animation: archiveItemIn 0.5s ease both;
+  animation: archiveItemIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .archive > *:nth-child(1) {
   animation-delay: 0.04s;
